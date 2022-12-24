@@ -1,0 +1,53 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #116feb;
+}
+
+div.not-found{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.not-found h1{
+    font-size: 400%;
+    color: #CACACA;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.not-found h3{
+    width: 100%;
+    font-size: 200%;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #878787;
+    text-align: center;
+}
+
+div.not-found span{
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+}
+
+div.not-found a{
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #878787;
+    color: #FFF;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+div.not-found a:hover{
+    opacity: 0.5;
+}
+
+
