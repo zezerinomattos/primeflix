@@ -1,10 +1,20 @@
 
+/*--------------------------------*/
+/*            LOADIN              */
+/*--------------------------------*/
+
+
 div.loading{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 14px;
 }
+
+
+/*--------------------------------*/
+/*            FILMES              */
+/*--------------------------------*/
 
 div.lista-filmes{
     max-width: 800px;
