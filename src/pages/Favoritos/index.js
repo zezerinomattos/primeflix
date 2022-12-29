@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 // MY IMPORTS
 import './style.css';
@@ -20,11 +21,12 @@ function Favoritos(){
 
     function excluirFilme(id){
         let filtroFilmes = filmes.filter( (item) => {
-            return (item.id !== id)
+            return (item.id !== id);
         })
 
         setFilmes(filtroFilmes);
-        localStorage.setItem('@primeflix', JSON.stringify(filtroFilmes))
+        localStorage.setItem('@primeflix', JSON.stringify(filtroFilmes));
+        toast.success("FILME REMOVIDO COM SUCESSO!");
     }
 
 
