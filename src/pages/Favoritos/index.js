@@ -18,6 +18,15 @@ function Favoritos(){
 
     }
 
+    function excluirFilme(id){
+        let filtroFilmes = filmes.filter( (item) => {
+            return (item.id !== id)
+        })
+
+        setFilmes(filtroFilmes);
+        localStorage.setItem('@primeflix', JSON.stringify(filtroFilmes))
+    }
+
 
     useEffect(() => {
         loadFilmes();
@@ -34,6 +43,7 @@ function Favoritos(){
                 :
                     <div className='container'>   
                     <h1>Minha Lista</h1>  
+                    {filmes.length === 0 && <span>Você não possui nem um filme salvo :( </span>}
 
                         <ul className='lista-filmes'>
                         
@@ -43,7 +53,7 @@ function Favoritos(){
                                         <span>{filme.title}</span>
                                         <div className='links'>
                                             <Link to={`/filme/${filme.id}`}>Ver detalhes</Link>
-                                            <button>Excluir</button>
+                                            <button onClick={() => excluirFilme(filme.id)}>Excluir</button>
                                         </div>
                                     </li>
                                 )
