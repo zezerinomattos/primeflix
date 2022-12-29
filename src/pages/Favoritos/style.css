@@ -1,0 +1,73 @@
+/*--------------------------------*/
+/*            LOADIN              */
+/*--------------------------------*/
+
+
+div.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
+
+
+/*--------------------------------*/
+/*            FILMES              */
+/*--------------------------------*/
+
+div.container h1{
+    text-align: center;
+    margin: 35px;
+}
+
+ul.lista-filmes{
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+ul.lista-filmes li{
+    width: 100%;
+    list-style: none;
+    margin: 14px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul.lista-filmes span{
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 22px;
+    display: block;
+}
+
+ul.lista-filmes a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #116feb;
+    margin: 20px;
+}
+
+ul.lista-filmes a:hover{
+    opacity: 0.7;
+}
+
+
+/*--------------------------------*/
+/*            Para Celular        */
+/*--------------------------------*/
+
+@media screen and (max-width:880px) {
+    ul.lista-filmes li{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        border: 2px solid #116feb;
+        border-radius: 4px;
+        padding: 10px;
+    }
+}
